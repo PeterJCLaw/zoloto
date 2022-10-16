@@ -63,7 +63,7 @@ class BaseMarker(ABC):
         )
 
     @cached_property
-    def distance(self) -> int:
+    def distance(self) -> float:
         return self.spherical.distance
 
     @cached_property

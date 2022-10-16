@@ -73,7 +73,7 @@ class SphericalCoordinates(NamedTuple):
         the centre of the image.
     """
 
-    distance: int
+    distance: float
     theta: float
     phi: float
 
@@ -95,7 +95,7 @@ class SphericalCoordinates(NamedTuple):
         distance = math.sqrt(sum(x**2 for x in cartesian))
         x, y, z = cartesian
         return SphericalCoordinates(
-            distance=int(distance),
+            distance=distance,
             theta=math.acos(y / distance),
             phi=math.atan2(z, x),
         )

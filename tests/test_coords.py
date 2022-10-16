@@ -107,7 +107,7 @@ def test_repr(euler_angles: tuple[float, float, float]) -> None:
             SphericalCoordinates(
                 theta=0.7853981633974484,  # math.pi / 4, with floating point error
                 phi=0,
-                distance=1414,
+                distance=1414.213562373095,
             ),
             id="to-one-side-and-up",
         ),

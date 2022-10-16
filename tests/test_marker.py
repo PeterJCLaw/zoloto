@@ -116,11 +116,11 @@ class MarkerTestCase(TestCase):
         self.assertIsType(self.marker.pixel_centre.y, float)
 
         if "rvec" in self.EXPECTED_DICT_KEYS:
-            self.assertIsType(self.marker.distance, int)
+            self.assertIsType(self.marker.distance, float)
 
             self.assertIsType(self.marker.spherical.rot_x, float)
             self.assertIsType(self.marker.spherical.rot_y, float)
-            self.assertIsType(self.marker.spherical.distance, int)
+            self.assertIsType(self.marker.spherical.distance, float)
 
             self.assertIsType(self.marker.cartesian.x, float)
             self.assertIsType(self.marker.cartesian.y, float)
